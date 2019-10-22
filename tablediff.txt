@@ -1,0 +1,18 @@
+
+tablediff -sourceserver DAXDBS04 -sourcedatabase DAX_PRODUCTION -sourcetable INVENTTRANS -destinationserver DAX-REPLDB01 -destinationdatabase DAX_REPLICA -destinationtable INVENTTRANS -f c:\documents\table1_differences.sql
+
+tablediff -sourceserver DAXDBS04 -sourcedatabase DAX_PRODUCTION -sourcetable SALESLINE -destinationserver DAX-REPLDB01 -destinationdatabase DAX_REPLICA -destinationtable SALESLINE -f c:\documents\SalesLine_differences.sql
+
+tablediff -sourceserver DAXDBS04 -sourcedatabase DAX_PRODUCTION -sourcetable INVENTREPORTDIMHISTORY -destinationserver DAX-REPLDB01 -destinationdatabase DAX_REPLICA -destinationtable INVENTREPORTDIMHISTORY -f c:\documents\INVENTREPORTDIMHISTORY_differences.sql
+
+tablediff -sourceserver DAXDBS04 -sourcedatabase DAX_PRODUCTION -sourcetable INVENTTRANS -destinationserver DAX-REPLDB01 -destinationdatabase DAX_REPLICA -destinationtable INVENTTRANS -et Difference -f c:\documents\table1_differences.sql
+
+tablediff -sourceserver DAXDBS04 -sourcedatabase DAX_PRODUCTION -sourcetable MKCINVENTPALLETLOCATION -destinationserver DAX-REPLDB01 -destinationdatabase DAX_REPLICA -destinationtable MKCINVENTPALLETLOCATION -et Difference -f c:\documents\table1_differences.sql
+
+tablediff -sourceserver DAXDBS04 -sourcedatabase DAX_PRODUCTION -sourcetable MKCMANAFESTLOGGING -destinationserver DAX-REPLDB01 -destinationdatabase DAX_REPLICA -destinationtable MKCMANAFESTLOGGING -et Difference -f c:\documents\table1_differences.sql
+
+
+
+tablediff -sourceserver DAXDBS04 -sourcedatabase DAX_PRODUCTION -sourcetable MKCPERFLOGGING -destinationserver DAX-REPLDB01 -destinationdatabase DAX_REPLICA -destinationtable MKCPERFLOGGING -et Difference -f c:\documents\table1_differences.sql
+
+tablediff -sourceserver DC1-DWDB1 -sourcedatabase Silvermine -sourceschema dbo -sourcetable FactSalesOrder -destinationserver DC1-STGDWB01 -destinationdatabase Silvermine -destinationschema dbo -destinationtable FactSalesOrder -et Difference -f c:\documents\silvermine_differences.sql

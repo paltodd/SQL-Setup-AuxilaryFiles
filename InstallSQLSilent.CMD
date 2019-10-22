@@ -1,0 +1,1 @@
+"\\dc1-tools01\installs\Microsoft.com\SQL Server\SQL Server 2017\Unpacked\setup.exe" /Configurationfile="C:\Documents\ConfigurationFile.ini" /IAcceptSQLServerLicenseTerms
